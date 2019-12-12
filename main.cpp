@@ -1,7 +1,19 @@
-#include <iostream>
+//https://www.youtube.com/watch?v=7oG0jxN3THI
+include <iostream>
+#include <string>
 
 using namespace std;
 void showArray(int lead[]);
+
+class myClass {
+public:
+    string name;
+    int rollNumber;
+    void print(string name, int rollNumber);
+};
+void myClass::print(string name, int rollNumber) {
+    cout << "Name is = " << name << "Roll number is = " << rollNumber << endl;
+}
 
 int main() {
     int rollNumber = 101;
@@ -90,6 +102,14 @@ int main() {
     int methodArray[] = {11,22,33,44,55};
 
     showArray(methodArray);
+
+    cout << " " << endl;
+    cout << "--------print value with class object-------" << endl;
+    cout << " " << endl;
+
+
+    myClass mc;
+    mc.print("Farhan", 101);
 }
 
 void showArray(int lead[]){
