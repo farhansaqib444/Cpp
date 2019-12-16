@@ -1,5 +1,6 @@
 //https://www.youtube.com/watch?v=7oG0jxN3THI
-include <iostream>
+//https://www.youtube.com/playlist?list=PLZaC0jlSFQBIFZQ8BbU7B05qvizLuBfDE
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -116,5 +117,25 @@ void showArray(int lead[]){
     for(int x = 0; x < 5; x++) {
         cout << "value to method array" << lead[x] << endl;
     }
+
+
+//    https://www.programiz.com/cpp-programming/pointers-arrays
+
+    float arr[5];
+    float *ptr;
+
+    cout << "Displaying address using arrays: " << endl;
+    for (int i = 0; i < 5; ++i)
+    {
+        cout << "&arr[" << i << "] = " << &arr[i] << endl;
+    }
+    // ptr = &arr[0]
+    ptr = arr;
+    cout<<"\nDisplaying address using pointers: "<< endl;
+    for (int i = 0; i < 5; ++i)
+    {
+        cout << "ptr + " << i << " = "<< ptr + i << endl;
+    }
+
 }
 
